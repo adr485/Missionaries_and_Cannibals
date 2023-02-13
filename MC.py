@@ -8,11 +8,11 @@ def invalid():
         print('invalid move,enter again')
         return 1
     if b==1:
-        if nm>m or nc>c:
+        if nm>m or nc>c or(nm==0 and nc==0):
             print('invalid move,enter again')
             return 1
     elif b==0:
-        if nm>(3-m) or nc>(3-c):
+        if nm>(3-m) or nc>(3-c) or(nm==0 and nc==0):
             print('invalid move,enter again')
             return 1
     return 0
